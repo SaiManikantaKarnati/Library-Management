@@ -17,6 +17,14 @@ const fetchBooks = async () => {
     results.forEach((book) => {
       let bookCard = document.createElement("div");
       bookCard.classList = "book-card";
+      const href = `./bookdetails.html?
+        author=${book.authors[0]}&
+        title=${book.title}&
+        summary=${book.summary}&
+        categories=${book.categories[0]}&
+        img=${book.published_works[0].cover_art_url}&
+        isbn=${book.published_works[0].isbn}`;
+
       bookCard.innerHTML = `
         <div class="book-image">
           <img src="${book.published_works[0].cover_art_url}" alt="Book Cover">
@@ -28,15 +36,27 @@ const fetchBooks = async () => {
           <p class="book-pages"><b>Number of pages :</b> ${book.published_works[0].page_count} pages</p>
           <p class="book-isbn"><b>ISBN Number :</b> ${book.published_works[0].isbn}</p>
           <p class="book-genre"><b>Genre :</b> ${book.categories[0]}</p>
-          <button class="more-details"><a href="./bookdetails.html">More details</a></button>
+          <a href=${href} class="more-details" target="_blank">More details</a>
         </div> `;
+      bookCard.addEventListener("click", () => show({ 
+        author: `${book.authors[0]}`, 
+        title: `${book.title}`, 
+        summary: `${book.summary}`,
+        categories: `${book.categories[0]}`,
+        isbn: `${book.published_works[0].isbn}`,
+        img: `${book.published_works[0].cover_art_url}`
+      }));
       totalBooks.appendChild(bookCard);
-      bookCard.onclick = () => redirectToBookDetails(book);
+      //bookCard.onclick = () => redirectToBookDetails(book);
     });
   } catch (error) {
     console.error("Error fetching books:", error);
   }
 };
+
+const show = (details) => {
+  window.open(`./bookdetails.html?author=${details.author}&title=${details.title}&summary=${details.summary}&categories=${details.categories}&isbn=${details.isbn}&img=${details.img}`,'_newtab');
+}
 
 fetchBooks();
 
