@@ -1,5 +1,6 @@
 # Library-Management
 
+Live link : https://library-management-assignment.netlify.app/ <br>
 IDE  : VS Code<br>
 Languages : HTML, CSS, JavaScript<br>
 Frameworks : Fontawesome, JQuery<br>
