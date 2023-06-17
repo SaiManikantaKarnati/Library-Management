@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/signup.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="container-navbar">
+        <div class="logo"></div>
+    </div>
+    <div class="container-signup">
+        <header>Sign Up</header>
+        <form class="signup-form" onsubmit="signUpSubmit()">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" id="name" required>
+            </div>
+        
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="text" placeholder="Enter email address" id="email" required>
+                </div>
+        
+            <div class="input-box">
+                <label>Enter password</label>
+                <input type="password" placeholder="Enter password" id="password" required>
+            </div>
+
+            <div class="input-box">
+                <label>Re enter password</label>
+                <input type="password" placeholder="Enter password" id="reEnterPassword" required>
+            </div>
+
+            <div id="passwordMatchText" class="password-match"></div>
+
+            <button type="submit">Sign Up</button>
+            <label>already have an account? <a href="./userlogin.html">login now</a></label>
+        </form>
+    </div>
+
+    <script src="./vendor/sweetalert.js"></script>
+    <script src="./js/signup.js"></script>
+    </body>
+</html> 

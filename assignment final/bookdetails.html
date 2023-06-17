@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bookdetails.css">
+    <link rel="stylesheet" href="/css/bookslist.css">
+    <link rel="stylesheet" href="/css/library.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-ABCDEF123456..." crossorigin="anonymous" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="/images/logo.gif" alt="logo"></div>
+        <ul class="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li class="dropdown">
+                <a href="#" id="profileDropdown">Hi, username</a>
+                <ul id="profileDropdownMenu">
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-details-container">
+        <div class="book-image">
+            <img id="book-image" src="" alt="Book Cover">
+            </div>
+                <p id="book-title" class="book-title"></p>
+                <p id="book-author" class="book-author"></p>
+    </div>
+    <script src="/js/bookslist.js"></script>
+    <script src="/js/bookdetails.js"></script>
+</body>
+</html>

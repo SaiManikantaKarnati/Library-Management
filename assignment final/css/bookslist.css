@@ -1,0 +1,13 @@
+#books {
+    border:1px solid black;
+    
+}
+
+.bookContainer {
+    padding: 20px;
+}
+
+.book-card a {
+    text-decoration: none;
+    color: inherit;
+}
