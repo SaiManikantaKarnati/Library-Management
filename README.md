@@ -1,11 +1,11 @@
 # Library-Management
 
-IDE  : VS Code
-Languages : HTML, CSS, JavaScript
-Frameworks : Fontawesome, JQuery
-API : Bookfinder (Books API)
+IDE  : VS Code<br>
+Languages : HTML, CSS, JavaScript<br>
+Frameworks : Fontawesome, JQuery<br>
+API : Bookfinder (Books API)<br>
 
-Implemented : 
-  (a) Login and Sign Up with authentication
-  (b) Optimized loading animations
-  (c) Displayed list of books in the form of cards
+Implemented : <br>
+  (a) Login and Sign Up with authentication<br>
+  (b) Optimized loading animations<br>
+  (c) Displayed list of books in the form of cards<br>
