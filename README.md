@@ -1,4 +1,4 @@
-# Library-Management
+# Books-Showcase
 
 Live link : https://regal-lamington-920429.netlify.app <br>
 IDE  : VS Code<br>
